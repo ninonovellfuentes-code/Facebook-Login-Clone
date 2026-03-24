@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NINYEW$ Login</title>
+    <style>
+        /* 1. GLOBAL STYLES & BACKGROUND */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 50px 40px;
+            width: 340px;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* 2. NEW WELCOME TEXT STYLE (Replaced the Circle) */
+        .welcome-title {
+            color: white;
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            /* Subtle neon glow effect */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 
+                         0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        /* 3. INPUT GROUPS */
+        .input-group {
+            background: white;
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+            padding: 12px 15px;
+            border-radius: 4px;
+        }
+
+        .input-icon {
+            margin-right: 12px;
+            font-size: 18px;
+            color: #444;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .eye-btn {
+            cursor: pointer;
+            margin-left: 10px;
+            font-size: 18px;
+            user-select: none;
+            opacity: 0.7;
+        }
+
+        /* 4. REMEMBER ME & FORGOT PASSWORD (FIXED ALIGNMENT) */
+        .options-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            font-size: 13px;
+            margin: 20px 0 30px;
+            font-style: italic;
+        }
+
+        .remember-me-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+
+        .remember-me-wrapper input {
+            width: auto;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .forgot-link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .forgot-link:hover {
+            text-decoration: underline;
+        }
+
+        /* 5. LOGIN BUTTON */
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background: rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            font-weight: bold;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .login-btn:hover {
+            background: rgba(255, 255, 255, 0.45);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="welcome-title">Welcome To <br> NINYEW$</div>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <span class="input-icon">👤</span>
+                <input type="text" placeholder="Username" required>
+            </div>
+
+            <div class="input-group">
+                <span class="input-icon">🔒</span>
+                <input type="password" id="passInput" placeholder="***********" required>
+                <span id="toggleEye" class="eye-btn">👁️</span>
+            </div>
+
+            <div class="options-row">
+                <label class="remember-me-wrapper">
+                    <input type="checkbox" checked> Remember me
+                </label>
+                <a href="#" class="forgot-link">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login-btn">LOGIN</button>
+        </form>
+    </div>
+
+    <script>
+        // PASSWORD TOGGLE LOGIC
+        const toggleEye = document.querySelector('#toggleEye');
+        const passInput = document.querySelector('#passInput');
+
+        toggleEye.addEventListener('click', () => {
+            const isPassword = passInput.getAttribute('type') === 'password';
+            passInput.setAttribute('type', isPassword ? 'text' : 'password');
