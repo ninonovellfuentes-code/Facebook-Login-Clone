@@ -1,8 +1,7 @@
-
 # Facebook Login Clone
 A front-end web development project designed to replicate the UI/UX of a social media login portal.
 
-# Group 3
+# Group 3 In Im - 325
 
 # Members
 * **Leader**
