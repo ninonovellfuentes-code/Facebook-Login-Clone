@@ -1,14 +1,17 @@
-
 # Facebook Login Clone
 A front-end web development project designed to replicate the UI/UX of a social media login portal.
 
+# Group 3 
+
 ## Members
-* **Raymar Sulib**
-* **Francisco Lumen Jr.**
-* **John Carlo Gacud**
-* **Meline Fuentes**
-* **Ivyn Ester Malugas**
-* **Kyle John Batoon**
+* **Leader**
+* **Niño Novell F. Fuentes**
+  
+* **Joy Ann Lato**
+* **Edcel Awing**
+* **Mary Ann Comcom**
+* **Mark Batoctoy**
+* **Alvin Berot**
 
 ## Project Description
 This project focuses on front-end accuracy and responsive design. It involves creating a pixel-perfect replica of a login interface to practice styling techniques, form alignment, and user interface consistency. It serves as a practical application of layout management and CSS aesthetics.
