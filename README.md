@@ -8,7 +8,7 @@ A front-end web development project designed to replicate the UI/UX of a social 
 * **Group Leader: Niño Novell F. Fuentes**
 
 
-Group Members
+* **Group Members**
 * **Joy Ann Lato**
 * **Edcel Awing**
 * **Mary Ann Comcom**
