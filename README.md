@@ -1,4 +1,4 @@
-# * **Facebook Login Clone**
+# * *Facebook Login Clone**
 <img width="564" height="617" alt="Facebook Log-In clone Picture" src="https://github.com/user-attachments/assets/4125f9b8-2ba6-4e42-aec5-582b564e095a" />
 
 * **A front-end web development project designed to replicate the UI/UX of a social media login portal.**
