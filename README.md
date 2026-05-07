@@ -3,6 +3,8 @@ A front-end web development project designed to replicate the UI/UX of a social 
 
 # Group 3 In Im - 325
 
+# Group 3 In Im - 325
+
 ## Members
 * **Leader**
 * **Niño Novell F. Fuentes**
