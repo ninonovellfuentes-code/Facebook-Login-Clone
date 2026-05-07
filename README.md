@@ -3,10 +3,9 @@ A front-end web development project designed to replicate the UI/UX of a social 
 
 # Group 3 In Im - 325 Industrial Organization and Management
 
-# Members
+# Members of the Group
 
-* **Leader**
-* **Niño Novell F. Fuentes**
+* **Group Leader: Niño Novell F. Fuentes**
 
 
 # Group Members
